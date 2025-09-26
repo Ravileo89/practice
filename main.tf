@@ -13,6 +13,7 @@ resource "azurerm_resource_group" "example" {
   location = each.value.location
 }
 
+var.rg
 
 resource "azurerm_storage_account" "stg1" {
 depends_on = [azurerm_resource_group.example ]

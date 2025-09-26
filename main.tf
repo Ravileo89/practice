@@ -1,10 +1,10 @@
-# #toset
-# resource "azurerm_resource_group" "example" {
-#   for_each = toset(["test1", "test2", "test3", "test3"])
+#toset
+resource "azurerm_resource_group" "example" {
+  for_each = toset(["test1", "test2", "test3", "test3"])
 
-#   name     = each.value
-#   location = "East US"
-# }
+  name     = each.value
+  location = "East US"
+}
 
 resource "azurerm_resource_group" "example" {
   for_each = var.rgs

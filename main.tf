@@ -23,3 +23,8 @@ for_each = var.stg
   account_replication_type = "LRS"
   account_tier = "Standard"
 }
+
+
+module "name" {
+  
+}

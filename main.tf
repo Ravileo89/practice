@@ -17,6 +17,7 @@ var.rg
 var.stg1
 var.stg3
 var.stg4
+var.stg2
 
 resource "azurerm_storage_account" "stg1" {
 depends_on = [azurerm_resource_group.example ]

@@ -17,6 +17,14 @@ var.rg
 var.stg1
 var.stg3
 var.stg4
+resource "azurerm_virtual_network" "examplevnet" {
+  for_each = var.vnet
+
+  name     = each.value.name
+  location = each.value.location
+  resource_group_name = each.value.resource_group_name
+  address_space = each.value.address_space
+}
 
 resource "azurerm_storage_account" "stg1" {
 depends_on = [azurerm_resource_group.example ]

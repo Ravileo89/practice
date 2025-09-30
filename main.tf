@@ -13,10 +13,6 @@ resource "azurerm_resource_group" "example" {
   location = each.value.location
 }
 
-var.rg
-var.stg1
-var.stg3
-var.stg4
 resource "azurerm_virtual_network" "examplevnet" {
   for_each = var.vnet
 

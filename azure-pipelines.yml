@@ -1,0 +1,7 @@
+trigger: none
+
+pool: test-pool
+
+steps:
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'

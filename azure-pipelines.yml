@@ -1,7 +1,7 @@
 trigger: none
 
 pool: test-pool
-#test11
+#test
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
